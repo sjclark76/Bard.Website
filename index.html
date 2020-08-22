@@ -1,17 +1,17 @@
 ---
-title: Jekyll Serif - Jekyll Small Business Theme
+title: Bard API Testing
 layout: default
 bodyClass: page-home
 ---
 
-<div class="intro pb-4">
+<!-- <div class="intro pb-4">
   <div class="container">
     <h1>Serif - Jekyll Small Business Theme.</h1>
     <p>Our business helps hundreds of customers with their accounting and taxation needs each year.</p>
   </div>
-</div>
+</div> -->
 
-<div class="container pt-2">
+<!-- <div class="container pt-2">
   <div class="call">
     <div class="call-box-top">
       <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
@@ -25,9 +25,9 @@ bodyClass: page-home
       <a href="{{site.baseurl}}/contact" class="button">Contact</a>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="container pt-8 pt-md-10">
+<!-- <div class="container pt-8 pt-md-10">
   <div class="row justify-content-start">
     <div class="col-12">
       <h2 class="title-3 text-dark mb-3">Our Services</h2>
@@ -48,7 +48,7 @@ bodyClass: page-home
       <a class="button button-primary mt-2" href="{{site.baseurl}}/services">View All Services</a>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
@@ -57,11 +57,14 @@ bodyClass: page-home
     </div>
     {% for feature in site.data.features %}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
-      <div class="feature">
-        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ feature.title }}</h2>
-        <div class="feature-content">{{ feature.description }}</div>
-      </div>
+      <a href="{{feature.url}}">
+        <div class="feature">
+          {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo"
+              src="{{ feature.image }}" /></div> {% endif %}
+          <h2 class="feature-title">{{ feature.title }}</h2>
+          <div class="feature-content">{{ feature.description }}</div>
+        </div>
+      </a>
     </div>
     {% endfor %}
   </div>

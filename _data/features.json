@@ -1,7 +1,8 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
+    "title": "Full Documentation",
+    "description": "Read the full documentation",
+    "url" : "https://docs.bard.net.nz/",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
